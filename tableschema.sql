@@ -11,6 +11,7 @@ CREATE TABLE "departments" (
      )
 );
 
+-- This has a composite key
 CREATE TABLE "dept_emp" (
     "eemp_no" INT   NOT NULL,
     "dept_no" char(4)   NOT NULL,
@@ -28,7 +29,7 @@ CREATE TABLE "dept_manager" (
      )
 );
 
--- This has a composite key
+
 CREATE TABLE "employees" (
     "emp_no" INT   NOT NULL,
     "emp_title_id" char(5)   NOT NULL,

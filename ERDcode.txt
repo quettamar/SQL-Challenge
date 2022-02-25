@@ -3,17 +3,18 @@ departments
 dept_no char(4) PK 
 dept_name VARCHAR(50)
 
+#this has a composite key
 dept_emp
 -
 eemp_no PK FK - employees.emp_no INT
 dept_no PK char(4) FK >- departments.dept_no
-#this has a composite key
 
+#This has a composite key
 dept_manager
 -
 dept_no PK FK >- departments.dept_no char(4)
 emp_no PK FK - employees.emp_no INT
-#This has a composite key
+
 
 employees
 -
